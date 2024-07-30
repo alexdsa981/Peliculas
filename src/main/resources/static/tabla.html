@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla-style.css">
+    <link rel="stylesheet" href="formulario-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tabla</title>
+</head>
+
+<body>
+    <h1>Tabla de peliculas</h1>
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th colspan="6">Peliculas</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Titulo</th>
+                <th>Director</th>
+                <th>Género</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+
+    <div id="formulario">
+        <h1>Modificación de peliculas</h1>
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+                <form method="post">
+                    <div class="formbold-input-flex">
+                        <div>
+                            <input type="text" name="titulo" id="titulo" placeholder="Avatar"
+                                class="formbold-form-input" />
+                            <label for="titulo" class="formbold-form-label"> Titulo </label>
+                        </div>
+                        <div>
+                            <input type="text" name="director" id="director" placeholder="Steven Spilberg"
+                                class="formbold-form-input" />
+                            <label for="director" class="formbold-form-label"> Director </label>
+                        </div>
+                    </div>
+
+                    <div class="formbold-input-flex">
+                        <div>
+                            <input type="text" name="genero" id="genero" placeholder="Drama"
+                                class="formbold-form-input" />
+                            <label for="genero" class="formbold-form-label"> Genero </label>
+                        </div>
+                    </div>
+                    <button class="formbold-btn" id="btnModificar">
+                        Modificar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="tabla.js"></script>
+</body>
+
+</html>
